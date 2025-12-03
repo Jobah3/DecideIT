@@ -1,0 +1,23 @@
+package jovan.janjic;
+
+public class Student {
+    private String username;
+
+    private final String fullName;
+    private final String indexNumber;
+    private final int imageResId;
+
+    public Student(String fullName, String indexNumber, int imageResId) {
+        this.fullName = fullName;
+        this.indexNumber = indexNumber;
+        this.imageResId = imageResId;
+    }
+
+    public String getFullName() { return fullName; }
+    public String getIndexNumber() { return indexNumber; }
+    public int getImageResId() { return imageResId; }
+
+    public String getReg() {
+        return this.username;
+    }
+}

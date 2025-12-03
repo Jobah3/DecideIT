@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="jovan.janjic">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DecideIT"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="jovan.janjic.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name="jovan.janjic.DecideActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DecideIT" />
+        <activity
+            android:name="jovan.janjic.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name="jovan.janjic.StudentViewActivity"
+            android:exported="false" /> <!-- Ovo je sada jedina LAUNCHER aktivnost -->
+        <activity
+            android:name="jovan.janjic.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- MainActivity više nema LAUNCHER filter -->
+        <activity
+            android:name="jovan.janjic.MainActivity"
+            android:exported="false" />
+        <activity android:name="jovan.janjic.ResultsActivity"/>
+            <activity android:name="jovan.janjic.TableFactoryActivity" android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="24dp">
+    <RadioGroup android:id="@+id/radioGroup" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/rbYes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes"/>
+        <RadioButton android:id="@+id/rbNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No"/>
+        <RadioButton android:id="@+id/rbAbstain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Abstain"/>
+    </RadioGroup>
+    <Button android:id="@+id/submitVote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Submit Vote"/>
+</LinearLayout>
